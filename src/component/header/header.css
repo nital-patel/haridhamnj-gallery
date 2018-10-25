@@ -1,0 +1,14 @@
+.logo {
+    font-size: 20px;
+    color: #888888;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header-title {
+    font-size: 15px;
+    color: #888888;
+}
