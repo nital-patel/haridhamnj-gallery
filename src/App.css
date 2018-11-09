@@ -1,12 +1,10 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,11 +15,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,3 +26,70 @@
     transform: rotate(360deg);
   }
 }
+.wrapper {
+  overflow: hidden;
+  height: auto;
+  width: 945px;
+  margin: 0 auto 0;
+}
+.content {
+  position: relative;
+  float: left;
+  color: #333;
+  z-index: 2;
+}
+.item {
+  width: 452px;
+  position: relative;
+  float: left;
+  display: block;
+  border-radius: 5px;
+  margin: 0 20px 15px 0;
+  font-size: 12px;
+}
+.shell {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+header {
+  border-bottom: 1px solid #bbb;
+}
+
+.img1 {
+  height: 325px;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  transition: opacity ease-in-out .2s;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.main-content {
+  border-radius: 50px;
+  height: 300px;
+  color: #fff;
+
+}
+footer {
+  border-radius: 5px 5px 0 0;
+  color: #bbb;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+.gallery-name {
+
+  color: black;
+}
+.gallery-details {
+
+  color: black;
+}
+

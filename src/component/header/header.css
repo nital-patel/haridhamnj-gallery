@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     padding: 25px;
 }
-header-title {
+.header-title {
     font-size: 15px;
     color: #888888;
 }

@@ -10,7 +10,7 @@ class Header extends Component {
                     2018-Gallery
                 </div>
                 <div className="header-title">
-                    <h1>You are here:Home/2018 – Gallery</h1>
+                    <h1>You are here: Home / 2018 – Gallery</h1>
                 </div>
 
             </header>
