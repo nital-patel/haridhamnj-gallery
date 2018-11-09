@@ -1,42 +1,42 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import header from './component/header/Header';
-import GalleryList from './component/GalleryList';
 import './App.css';
+import {
+    Router as Router,
+    Route
+} from 'react-router-dom';
+import Header from './component/header/Header';
+import GalleryList from './component/GalleryList';
+
+import createBrowserHistory from 'history/createBrowserHistory'
+
+const history = createBrowserHistory();
+window.applicationHistory = history;
+
 
 class App extends Component {
-  render() {
-    return (
-        <div className="App">
-            <header>
-                <div className="logo">
-                    2018-Gallery
-                </div>
-              <div className="header-title">
-                <p>You are here:  Home  /  2018 – Gallery</p>
-              </div>
-            </header>
-                <div className="wrapper" >
-                    <div className="content">
-                        <div className="item">
-                            <div className="shell">
-                                <div className="main-content">
-                                    <img className="img1" src={'https://events.yds.org/images/hms-hero.jpg'} />
-                                        <div className="footer">
-                                            <p className="gallery-name">hi</p>
-                                            <p className="gallery-detail">hello</p>
+    constructor(props) {
+        super(props);
 
-                                    </div>
-                                </div>
-                            </div>
+        this.state = {
+            user: null
+        };
+    }
+
+        render() {
+        return (
+            <Router history={history}>
+                <div className="App">
+                    <Header user={this.state.user}/>
+                        <div className="content">
+                            <Route exact path="/" component={GalleryList} />
                         </div>
                     </div>
-                </div>
-        </div>
 
-
-    );
-  }
+            </Router>
+        );
+    }
 }
+
+
 
 export default App;

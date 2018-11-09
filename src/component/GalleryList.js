@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class GalleryList extends Component {
     render() {
@@ -15,8 +16,6 @@ class GalleryList extends Component {
                                 <div className="footer">
                                     <p className="gallery-name">hi</p>
                                     <p className="gallery-detail">hello</p>
-
-
                                 </div>
                             </div>
                         </div>
