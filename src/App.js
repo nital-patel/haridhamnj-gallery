@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import {
-    Router as Router,
-    Route
-} from 'react-router-dom';
+
 import Header from './component/header/Header';
-import GalleryList from './component/GalleryList';
+import Gallery from './component/Gallery';
 
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -21,22 +18,17 @@ class App extends Component {
             user: null
         };
     }
-
-        render() {
+    render() {
         return (
-            <Router history={history}>
                 <div className="App">
-                    <Header user={this.state.user}/>
+                    <Header/>
                         <div className="content">
-                            <Route exact path="/" component={GalleryList} />
+                            <Gallery/>
                         </div>
-                    </div>
-
-            </Router>
+                </div>
         );
+
     }
 }
-
-
 
 export default App;
