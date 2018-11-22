@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
+import Modal from "./modal/Modal";
+
 
 class Gallery extends Component {
+    state = {
+        show: false
+    }
+    showModal = () => {
+        this.setState({
+            show: true
+        })
+    }
+
     constructor() {
         super();
         this.state = {
@@ -28,6 +39,7 @@ class Gallery extends Component {
                 'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-18.jpg'
             ]
         };
+
     }
     render() {
         const imageList = this.state.imageList;
@@ -41,7 +53,15 @@ class Gallery extends Component {
                                 <div className="shell">
                                     <div className="main-content">
                                         <div>
-                                            <img className="img1" src={image}/>
+                                           <img className="img1" src={image} />
+                                            <button className="show" onClick={this.showModal}></button>
+                                        </div>
+                                        <Modal
+                                            show={this.state.show}>
+                                            This message is from modal!
+                                        </Modal>
+                                        <div>
+                                            <button className="close" onClick={this.x}>X</button>
                                         </div>
                                     </div>
                                 </div>
