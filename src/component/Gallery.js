@@ -56,14 +56,16 @@ class Gallery extends Component {
                                            <img className="img1" src={image} />
                                             <button className="show" onClick={this.showModal}></button>
                                         </div>
+                                        <div>
                                         <Modal
                                             show={this.state.show}>
                                             This message is from modal!
-                                        </Modal>
-                                        <div>
                                             <button className="close" onClick={this.x}>X</button>
+                                        </Modal>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
