@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from "./modal/Modal";
+import { Link } from 'react-router-dom';
 
 
 class Gallery extends Component {
@@ -10,6 +11,16 @@ class Gallery extends Component {
         this.setState({
             show: true
         })
+
+    }
+    state = {
+        show: true
+    }
+    onClose = () => {
+        this.setState({
+            show: false
+        })
+
     }
 
     constructor() {
@@ -54,18 +65,16 @@ class Gallery extends Component {
                                     <div className="main-content">
                                         <div>
                                            <img className="img1" src={image} />
-                                            <button className="show" onClick={this.showModal}></button>
+                                        <Link to={`/Modal/${image}`}><button className="show" onClick={this.showModal}>s</button></Link>
                                         </div>
                                         <div>
                                         <Modal
                                             show={this.state.show}>
                                             This message is from modal!
-                                            <button className="close" onClick={this.x}>X</button>
+                                            <button className="close" onClick={this.onClose}>X</button>
                                         </Modal>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>

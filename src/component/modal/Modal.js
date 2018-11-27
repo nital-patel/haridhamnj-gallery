@@ -6,9 +6,11 @@ export default class Modal extends React.Component{
             return null;
         }
         return(
+
             <div className="modal">
                 {this.props.children}
             </div>
+
 
         )
     }
