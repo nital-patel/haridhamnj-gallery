@@ -63,14 +63,14 @@ class Gallery extends Component {
                             <div className="item">
                                 <div className="shell">
                                     <div className="main-content">
-                                        <div>
-                                           <img className="img1" src={image} />
-                                        <Link to={`/Modal/${image}`}><button className="show" onClick={this.showModal}>s</button></Link>
+                                        <div className="img-content">
+                                            <img className="img1" src={image} />
+                                        <Link className="link" to={`/image/${index}`}><button className="show" onClick={this.showModal}>s</button></Link>
                                         </div>
                                         <div>
                                         <Modal
                                             show={this.state.show}>
-                                            This message is from modal!
+                                            <img className="img1" src={image} />
                                             <button className="close" onClick={this.onClose}>X</button>
                                         </Modal>
                                         </div>
