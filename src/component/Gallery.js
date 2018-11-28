@@ -64,15 +64,18 @@ class Gallery extends Component {
                                 <div className="shell">
                                     <div className="main-content">
                                         <div className="img-content">
-                                            <img className="img1" src={image} />
-                                        <Link className="link" to={`/image/${index}`}><button className="show" onClick={this.showModal}>s</button></Link>
+                                            <img className="img1" src={image}/>
+                                            <Link className="link" to={`/image/${index}`}>
+                                                <button className="show" onClick={this.showModal}>S</button>
+                                            </Link>
                                         </div>
-                                        <div>
-                                        <Modal
-                                            show={this.state.show}>
-                                            <img className="img1" src={image} />
-                                            <button className="close" onClick={this.onClose}>X</button>
-                                        </Modal>
+                                        <div className="modal">
+                                            <Modal
+                                                 show={this.state.show}>
+                                                <img className="modal-content" src={image}/>
+                                                <span className="close" onClick={this.onClose}>x</span>
+                                                <div className="caption"></div>
+                                            </Modal>
                                         </div>
                                     </div>
                                 </div>
@@ -80,6 +83,7 @@ class Gallery extends Component {
                         </div>
                     ))
                 }
+
             </div>
         );
     }

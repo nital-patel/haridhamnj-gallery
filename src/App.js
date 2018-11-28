@@ -22,8 +22,8 @@ class App extends Component {
                     <Header/>
                         <div>
                             <Gallery/>
-
                             <Modal/>
+
                         </div>
                 </div>
             </Router>
