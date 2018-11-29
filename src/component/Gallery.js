@@ -1,30 +1,11 @@
 import React, { Component } from 'react';
-import Modal from "./modal/Modal";
-import { Link } from 'react-router-dom';
-
+import Image from "./Image";
 
 class Gallery extends Component {
-    state = {
-        show: false
-    }
-    showModal = () => {
-        this.setState({
-            show: true
-        })
 
-    }
-    state = {
-        show: true
-    }
-    onClose = () => {
-        this.setState({
-            show: false
-        })
 
-    }
-
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             imageList: [
                 'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-01.jpg',
@@ -54,37 +35,15 @@ class Gallery extends Component {
     }
     render() {
         const imageList = this.state.imageList;
-
         return (
             <div className="wrapper" >
                 {
                     imageList.map((image, index) => (
-                        <div className="content" key={index}>
-                            <div className="item">
-                                <div className="shell">
-                                    <div className="main-content">
-                                        <div className="img-content">
-                                            <img className="img1" src={image}/>
-                                            <Link className="link" to={`/image/${index}`}>
-                                                <button className="show" onClick={this.showModal}>S</button>
-                                            </Link>
-                                        </div>
-                                        <div className="modal">
-                                            <Modal
-                                                 show={this.state.show}>
-                                                <img className="modal-content" src={image}/>
-                                                <span className="close" onClick={this.onClose}>x</span>
-                                                <div className="caption"></div>
-                                            </Modal>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Image image={image} key={index}/>
                     ))
                 }
-
             </div>
+
         );
     }
 };

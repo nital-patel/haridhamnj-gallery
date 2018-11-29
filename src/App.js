@@ -9,6 +9,7 @@ import {
 import Header from './component/header/Header';
 import Gallery from './component/Gallery';
 import Modal from './component/modal/Modal';
+
 import createBrowserHistory from 'history/createBrowserHistory'
 const history = createBrowserHistory();
 window.applicationHistory = history;
