@@ -28,30 +28,37 @@ header {
   border-bottom: 1px solid #bbb;
 }
 .img1{
-  height: 300px;
   border-radius: 5px 5px 5px 5px;
   display: block;
   cursor: pointer;
   width: 100%;
-  object-fit: fill;
   transition: transform 400ms ease-out;
-  margin: 1rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  flex: 1 0 24rem;
 }
 .img1:hover {
   transform: scale(1.15);
 }
-.main-content {
-  border-radius: 50px;
-  height: 300px;
-  color: #fff;
+
+@supports (display: grid) {
+  .main-content {
+    border-radius: 50px;
+    height: 300px;
+    color: #fff;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .main-content,
+  .img-content {
+    margin: 0;
+  }
 }
 .img-content {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  flex: 1 0 24rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 .gallery-name {
   color: black;
