@@ -27,9 +27,8 @@ class Image extends Component {
                     <div className="shell">
                         <div className="main-content">
                             <div className="img-content">
-                                <img className="img1" src={image} alt="something"/>
+                                <img className="img1" src={image} alt="something" onClick={this.showModal}/>
                                 <div className="link">
-                                    <button className="show" onClick={this.showModal}>S</button>
                                 </div>
                             </div>
                             <div>
@@ -37,7 +36,9 @@ class Image extends Component {
                                     (this.state.show)
                                         ?
                                         <Modal
-                                            show={this.state.show}>
+                                            show={this.state.show} className="test">
+                                            <a href="#" className="previous round">&#8249;</a>
+                                            <a href="#" className="next round">&#8250;</a>
                                             <img className="modal-content" src={image} alt="something"/>
                                             <a className="close" onClick={this.onClose}>x</a>
                                             <div className="caption"></div>

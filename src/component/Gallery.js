@@ -44,6 +44,7 @@ class Gallery extends Component {
                 }
             </div>
 
+
         );
     }
 };

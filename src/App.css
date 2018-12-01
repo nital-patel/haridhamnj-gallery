@@ -1,6 +1,7 @@
 .wrapper {
   width: 100%;
   margin: 0 auto 0;
+
 }
 .content {
   color: #333;
@@ -21,15 +22,16 @@
 header {
   border-bottom: 1px solid #bbb;
 }
-.img1 {
+.img1{
   height: 300px;
   border-radius: 5px 5px 5px 5px;
   display: block;
-  width: 100%;
   cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
 }
 .img1:hover {
-  cursor: pointer;
+  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.5), 0 20px 25px 0 rgba(0, 0, 0, 0.25);
 }
 .main-content {
   border-radius: 50px;
@@ -48,15 +50,18 @@ header {
 }
 .close {
   position: absolute;
-  top: 19px;
-  right: 245px;
-  font-size: 30px;
+  top: -1px;
+  right: -5px;
+  font-size: 35px;
   width: 40px;
   height: 40px;
   border: 2px solid transparent;
+  font-weight: bold;
+  color: #ffffff;
 }
-.close:hover {
-  color: #bbb;
+.close:hover,
+.close:focus {
+  color: #999;
   text-decoration: none;
   cursor: pointer;
 }
@@ -69,6 +74,7 @@ header {
   border-bottom: 2px solid #c0392b;
   cursor: pointer;
   background-color: #f05a1a;
+  content: "\E869";
 }
 .show:hover,
 .show:focus {
@@ -76,7 +82,6 @@ header {
 
 }
 .modal {
-
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -100,7 +105,6 @@ header {
   height: 100%;
   overflow: auto;
   background-color: rgb(0,0,1);
-
 }
 .caption {
   margin: auto;
@@ -127,5 +131,10 @@ header {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
+.test {
 
+}
+.previous round {
+  
+}
 
