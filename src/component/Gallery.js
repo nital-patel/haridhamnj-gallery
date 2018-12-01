@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Image from "./Image";
+import Modal from "./modal/Modal";
 
 class Gallery extends Component {
 
@@ -34,6 +35,7 @@ class Gallery extends Component {
 
     }
     render() {
+        const {image} = this.props;
         const imageList = this.state.imageList;
         return (
             <div className="wrapper" >
@@ -42,7 +44,25 @@ class Gallery extends Component {
                         <Image image={image} key={index}/>
                     ))
                 }
+                <div>
+                    {
+                        (this.state.show)
+                            ?
+                            <Modal
+                                show={this.state.show} className="test">
+                                <div className="test">
+                                    <button type="button" className="previous round">&#8249;</button>
+                                </div>
+                                <img className="modal-content" src={image} alt="something"/>
+                                <a className="close" onClick={this.onClose}>x</a>
+                                <div className="caption"></div>
+                            </Modal>
+                            :
+                            null
+                    }
+                </div>
             </div>
+
 
 
         );

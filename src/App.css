@@ -1,3 +1,8 @@
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto 0;
@@ -28,10 +33,15 @@ header {
   display: block;
   cursor: pointer;
   width: 100%;
-  transition: 0.3s;
+  object-fit: fill;
+  transition: transform 400ms ease-out;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  flex: 1 0 24rem;
 }
 .img1:hover {
-  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.5), 0 20px 25px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.15);
 }
 .main-content {
   border-radius: 50px;
@@ -40,6 +50,8 @@ header {
 }
 .img-content {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery-name {
   color: black;
@@ -132,9 +144,48 @@ header {
   to {-webkit-transform:scale(1)}
 }
 .test {
+  margin-top: 10px;
 
 }
-.previous round {
-  
+.previous {
+  position: absolute;
+  top: 50%;
+  margin-top: 50px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: -590px;
+  font-size: xx-large;
+  color: #f05a1a;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  border: 0;
+
+}
+.next {
+  position: absolute;
+  top: 50%;
+  margin-top: 55px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  margin-left: 590px;
+  font-size: xx-large;
+  color: #f05a1a;
+  text-align: center;
+  border: 0;
+  background: transparent;
+}
+.round {
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+
 }
 

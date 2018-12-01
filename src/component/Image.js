@@ -36,13 +36,19 @@ class Image extends Component {
                                     (this.state.show)
                                         ?
                                         <Modal
-                                            show={this.state.show} className="test">
-                                            <a href="#" className="previous round">&#8249;</a>
-                                            <a href="#" className="next round">&#8250;</a>
+                                            show={this.state.show} className="">
+
                                             <img className="modal-content" src={image} alt="something"/>
                                             <a className="close" onClick={this.onClose}>x</a>
                                             <div className="caption"></div>
+                                            <div className="test">
+                                                <button type="button" className="previous round">&#8249;</button>
+                                            </div>
+                                            <div className="test">
+                                                <button type="button" className="next round">&#8250;</button>
+                                            </div>
                                         </Modal>
+
                                         :
                                         null
                                 }
