@@ -2,11 +2,12 @@ body {
   min-height: 100vh;
   background-color: #fafafa;
 }
-
+header {
+    border-bottom: 1px solid #bbb;
+}
 .wrapper {
   width: 100%;
   margin: 0 auto 0;
-
 }
 .content {
   color: #333;
@@ -24,8 +25,14 @@ body {
 .shell {
   position: relative;
 }
-header {
-  border-bottom: 1px solid #bbb;
+.main-content {
+    height: 300px;
+    display: -webkit-box;
+}
+.img-content {
+    overflow: hidden;
+    display: block;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 .img1{
   border-radius: 5px 5px 5px 5px;
@@ -36,36 +43,6 @@ header {
 }
 .img1:hover {
   transform: scale(1.15);
-}
-
-@supports (display: grid) {
-  .main-content {
-    border-radius: 50px;
-    height: 300px;
-    color: #fff;
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
-  }
-  .main-content,
-  .img-content {
-    margin: 0;
-  }
-}
-.img-content {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  flex: 1 0 24rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-}
-.gallery-name {
-  color: black;
-  font-size: 30px;
-}
-.gallery-details {
-  color: black;
 }
 .close {
   position: absolute;
@@ -98,7 +75,6 @@ header {
 .show:hover,
 .show:focus {
   color: #bbb;
-
 }
 .modal {
   position: fixed; /* Stay in place */
@@ -145,14 +121,12 @@ header {
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
 }
-
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 .test {
   margin-top: 10px;
-
 }
 .previous {
   position: absolute;
@@ -161,14 +135,17 @@ header {
   padding: 0;
   width: 50px;
   height: 50px;
-  margin-left: -590px;
-  font-size: xx-large;
-  color: #f05a1a;
-  text-align: center;
-  opacity: 1;
+  left: 5px;
+  font-size: 70px;
+  color: #999;
   background: transparent;
   border: 0;
-
+  outline: none;
+  box-shadow: none;
+}
+.previous:hover {
+  cursor: pointer;
+  color: #f05a1a;
 }
 .next {
   position: absolute;
@@ -177,22 +154,20 @@ header {
   padding: 0;
   width: 50px;
   height: 50px;
-  margin-left: 590px;
-  font-size: xx-large;
-  color: #f05a1a;
+  right: 5px;
+  font-size: 70px;
   text-align: center;
   border: 0;
   background: transparent;
+  outline: none;
+  color: #999;
+  box-shadow: none;
 }
-.round {
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
+.next:hover {
+  color: #f05a1a;
+  cursor: pointer;
 }
 
-a:hover {
 
-}
+
 

@@ -3,11 +3,10 @@ import Image from "./Image";
 import Modal from "./modal/Modal";
 
 class Gallery extends Component {
-
-
     constructor(props) {
         super(props);
         this.state = {
+            imageNumber: 0,
             imageList: [
                 'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-01.jpg',
                 'https://haridhamnj.org/wp-content/uploads/2018/08/AYS2018-46.jpg',
@@ -34,14 +33,47 @@ class Gallery extends Component {
         };
 
     }
+    showModal = (imageNumber) => {
+
+        this.setState({
+            show: true,
+            imageNumber: imageNumber
+        });
+
+    }
+
+    onClose = (imageNumber) => {
+        this.setState({
+            show: false,
+
+        });
+    }
+
+    increment = () => {
+        const imageNumber = this.state.imageNumber;
+        const newImageNumber = (imageNumber < this.state.imageList.length - 1 ) ? imageNumber + 1 : imageNumber;
+        this.setState({
+            ...this.state,
+            imageNumber: newImageNumber
+        });
+    }
+
+    decrement = () => {
+        const imageNumber = this.state.imageNumber;
+        const newImageNumber = (imageNumber > 0 ) ? imageNumber - 1 : imageNumber;
+        this.setState({
+            ...this.state,
+            imageNumber: newImageNumber
+        });
+    }
+
     render() {
-        const {image} = this.props;
         const imageList = this.state.imageList;
         return (
             <div className="wrapper" >
                 {
                     imageList.map((image, index) => (
-                        <Image image={image} key={index}/>
+                        <Image onClick={this.showModal} image={image} key={index} number={index}/>
                     ))
                 }
                 <div>
@@ -49,22 +81,23 @@ class Gallery extends Component {
                         (this.state.show)
                             ?
                             <Modal
-                                show={this.state.show} className="test">
-                                <div className="test">
-                                    <button type="button" className="previous round">&#8249;</button>
-                                </div>
-                                <img className="modal-content" src={image} alt="something"/>
-                                <a className="close" onClick={this.onClose}>x</a>
+                                show={this.state.show} className="">
+                                <img className="modal-content" alt="" src={imageList[this.state.imageNumber]} />
+                                <button className="close" onClick={this.onClose}>x</button>
                                 <div className="caption"></div>
+                                <div className="test">
+                                    <button type="button" onClick={this.decrement} className="previous round">&#8249;</button>
+                                </div>
+                                <div className="test">
+                                    <button type="button" onClick={this.increment} className="next round">&#8250;</button>
+                                </div>
                             </Modal>
+
                             :
                             null
                     }
                 </div>
             </div>
-
-
-
         );
     }
 };
