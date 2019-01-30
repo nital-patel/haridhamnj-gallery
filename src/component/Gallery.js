@@ -28,7 +28,8 @@ class Gallery extends Component {
                 'https://haridhamnj.org/wp-content/uploads/2014/09/GBM_Session-4-17.jpg',
                 'https://haridhamnj.org/wp-content/uploads/2014/09/GBM_Session-4-19.jpg',
                 'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-15.jpg',
-                'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-18.jpg'
+                'https://haridhamnj.org/wp-content/uploads/2014/09/AmbrishDiksha-18.jpg',
+                'http://shaharidham.org/category/4153-26.html'
             ]
         };
 
@@ -47,6 +48,17 @@ class Gallery extends Component {
             show: false,
 
         });
+    }
+    onKeyUp = (e) => {
+        if(e.which === 27) {
+            this.onClose(e);
+        }
+    }
+    componentDidMount() {
+        document.addEventListener("keyup", this.onKeyUp);
+    }
+    componentWillMount() {
+        document.removeEventListener("keyup", this.onKeyUp);
     }
 
     increment = () => {
