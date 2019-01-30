@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d429bc4d-6aed-4fc6-8716-083cf7a76cd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/modal/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +30,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="4" />
+          <entry key="css" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="23" />
@@ -44,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="4" />
+          <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="23" />
@@ -58,13 +53,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1700" />
+          <entry key="css" value="1746" />
           <entry key="js" value="7612" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1700" />
+          <entry key="CSS" value="1746" />
           <entry key="JavaScript" value="7612" />
         </counts>
       </usages-collector>
@@ -84,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component/Gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="421">
               <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -144,10 +139,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
+            <state relative-caret-position="413">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,13 +189,13 @@
         <option value="$PROJECT_DIR$/src/component/modal/modal.js" />
         <option value="$PROJECT_DIR$/src/component/GalleryList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/component/Image.js" />
         <option value="$PROJECT_DIR$/src/component/header/Header.js" />
         <option value="$PROJECT_DIR$/src/component/Store.js" />
         <option value="$PROJECT_DIR$/src/component/modal/Modal.js" />
         <option value="$PROJECT_DIR$/src/component/Gallery.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -216,10 +216,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="509" />
-    <option name="y" value="48" />
-    <option name="width" value="931" />
-    <option name="height" value="494" />
+    <option name="x" value="169" />
+    <option name="y" value="36" />
+    <option name="width" value="1188" />
+    <option name="height" value="667" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -310,20 +310,20 @@
       <workItem from="1543696709809" duration="7185000" />
       <workItem from="1543871119372" duration="11012000" />
       <workItem from="1544122318700" duration="4689000" />
-      <workItem from="1548180873424" duration="6695000" />
+      <workItem from="1548180873424" duration="8425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136033000" />
+    <option name="totallyTimeSpent" value="137763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="509" y="48" width="931" height="494" extended-state="0" />
+    <frame x="169" y="36" width="1188" height="667" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.5046729" side_tool="true" weight="0.25785583" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49532712" visible="true" weight="0.30659342" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49532712" visible="true" weight="0.23907454" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -398,16 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/header/header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -461,6 +451,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/modal/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -473,11 +466,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="421">
           <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
         </state>
       </provider>
     </entry>
