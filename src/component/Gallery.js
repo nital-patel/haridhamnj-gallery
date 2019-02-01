@@ -41,7 +41,6 @@ class Gallery extends Component {
         });
 
     }
-
     onClose = (imageNumber) => {
         this.setState({
             show: false,
@@ -68,7 +67,6 @@ class Gallery extends Component {
             imageNumber: newImageNumber
         });
     }
-
     decrement = () => {
         const imageNumber = this.state.imageNumber;
         const newImageNumber = (imageNumber > 0 ) ? imageNumber - 1 : imageNumber;
@@ -77,7 +75,6 @@ class Gallery extends Component {
             imageNumber: newImageNumber
         });
     }
-
     render() {
         const imageList = this.state.imageList;
         return (
