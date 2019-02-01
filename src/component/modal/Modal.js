@@ -1,5 +1,4 @@
 import React from 'react';
-import Gallery from "../Gallery";
 
 export default class Modal extends React.Component{
     render() {
